@@ -1,0 +1,530 @@
+
+
+:root{
+  --color-primary:rgb(106, 167, 235);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri light';
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: white;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+.header_inin{
+    width: 100%;
+    height: 60px;
+    background: rgba(115, 113, 113, 0.712);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    
+}
+
+.select_page{
+  border-bottom: 3px solid rgb(255, 255, 255);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+
+.header_inin a{
+  color: white;
+  
+}
+
+.logo_header{
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.logo_header h3{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 999;
+  font-family: Tahoma;
+}
+
+.logo_header img{
+  height: 45px;
+}
+.logo_header .txt_logo{
+  height: auto;
+  padding-left: 5px;
+}
+
+.logo_header .txt_logo p{
+  margin: 0;
+  padding: 0;
+  margin-top: -10px;
+  
+}
+
+
+.header_inin .items_nav a{
+  padding: 10px;
+}
+
+.header_inin .items_nav a:hover{
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.login_icon{
+  background-color: rgb(249, 253, 255);
+  border-radius: 50%;
+  padding: 8px 10px 8px 10px !important;
+}
+.login_icon i{
+  color: rgb(39, 40, 40);
+}
+
+
+/*SECTION INICIO*/
+
+/*
+https://incremptia.com/wp-content/uploads/2018/09/crear-empresa.jpg
+https://www.cloudmasters.es/wp-content/uploads/2021/02/empresa.jpg
+https://www.bbva.com/wp-content/uploads/2021/09/BBVA-Lanzamiento_Fondo_de_Capital-APERTURA.jpg
+
+
+*/
+.section_inicio{
+  width: 100%;
+  height: 100vh;
+  background: var(--color-primary);
+  background-image: url('https://www.cloudmasters.es/wp-content/uploads/2021/02/empresa.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.section_inicio .titulox_inix{
+  text-align: center;
+}
+
+.section_inicio .titulox_inix h1{
+  font-weight: 999;
+  color: white;
+  font-family: Tahoma;
+}
+
+.section_inicio .titulox_inix p{
+  color: rgb(255, 255, 255);
+}
+
+.icons_menu .login_menu{
+  background: white;
+  color: black;
+  padding: 5px 10px 3px 10px;
+  font-size: 20px;
+}
+
+.icons_menu .login_menu i{
+  transition: .5s !important;
+}
+
+
+@media (max-width:700px){
+  .header_inin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  }
+}
+
+
+.titulox_inix img{
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+@media (max-width:800px){
+  .icons_menu{
+    visibility: visible;
+    position: relative;
+  }
+  .items_nav{
+    visibility: hidden;
+    position: absolute;
+  }
+
+
+
+}
+
+@media (min-width:800px){
+  .icons_menu{
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+
+/*MENU_MOVILLLLL*/
+
+.menu_movil{
+  border: 0;
+  width: 100%;
+  height: 440px;
+  top: 60px;
+  background: transparent !important;
+  transition: .5s;
+}
+.menu_movil .offcanvas-body{
+  background: white;
+  box-shadow: 0px 2px 5px rgba(84, 84, 84, 0.197);
+  
+}
+
+.menu_movil .offcanvas-body a{
+  display: block !important;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.menu_movil .offcanvas-body a:hover{
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.menu_movil .offcanvas-body .buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu_movil .offcanvas-body .buttons button{
+  background: rgb(57, 56, 56);
+  color: white;
+  padding: 10px 50px 10px 50px;
+  border: none;
+  border-radius: 6px;
+}
+
+.menu_movil .offcanvas-body .buttons button:hover{
+  background: rgb(231, 231, 231);
+  color: rgb(55, 54, 54);
+  
+}
+
+.menu_movil .offcanvas-body .buttons_redes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu_movil .offcanvas-body .buttons_redes i{
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu{
+  background: rgb(255, 255, 255) !important;
+  transition: .5s;
+  transform: rotate(45deg) !important;
+}
+
+.menu i{
+  transition: .5s;
+  transform: rotate(90deg) !important;
+}
+
+
+/*MENU_MOVILLLLL*/
+
+
+.inicio_ios .row{
+  align-items: center;
+}
+
+
+
+.cont_act img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cont_info{
+  padding-top: 20px;
+
+}
+
+
+/*--------------------------------*/
+
+.progress{
+  margin-bottom: 10px;
+
+}
+
+.btn-secondaryes{
+  background: var(--color-primary);
+  color: white;
+  text-align: right;
+  text-align: center;
+  
+}
+
+.btn-dangeres{
+  background: var(--color-primary);
+  color: white;
+  text-align: right;
+  text-align: center;
+}
+
+/*-------------------------------*/
+
+.second_sect{
+  width: 100%;
+  background: var(--color-primary);
+  padding: 10px;
+  color: white;
+  
+}
+
+.est_panel p{
+  font-size: 17px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.ctn-dc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctn-dc a button{
+  background: white;
+  padding: 10px 20px 10px 20px;
+  border: 0;
+  box-shadow: 0px 2px 5px rgba(208, 208, 208, 0.719);
+}
+
+.ctn-dc a button:hover{
+  background: rgb(255, 255, 255);
+  
+}
+
+
+
+
+/*--------------------------------------*/
+
+.inicio_sect_dos{
+  width: 100%;
+  padding: 20px;
+}
+.axd {
+  border:  0 !important;
+}
+.tarject{
+  padding: 10px;
+}
+
+.tarject div{
+  border: 1px solid rgb(225, 225, 225);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgb(236, 236, 236);
+}
+
+
+.tarject h1{
+  padding-top: 20px;
+  font-family: Tahoma;
+}
+
+.icn_adx{
+  text-align: center;
+  border-radius: 20px;
+}
+
+.icn_adx i{
+  font-size: 50px;
+}
+
+.icn_adx h2{
+  font-size: 17px;
+}
+
+
+.icn_adx div:hover{
+  background: var(--color-primary);
+  color: white;
+  /*animation: .5s icon_servs linear ;*/
+  scale: 1.1;
+}
+
+@keyframes icon_servs{
+  to{
+    scale: 1.1;
+  }
+}
+
+footer{
+  background: rgb(65, 125, 215);
+  padding: 20px;
+  text-align: center;
+  
+}
+
+footer p{
+  margin: 0;
+  color: rgb(237, 237, 237);
+}
+
+
+.sect_contc{
+  padding: 20px;
+  background: rgb(238, 238, 238);
+}
+
+.fil_col h3{
+  font-family: arial;
+  font-weight: 333 !important;
+  color: rgb(63, 63, 63);
+}
+.fil_col p{
+  
+  text-align: left;
+  margin: 10px;
+  color: rgb(110, 110, 110) !important;
+  
+}
+
+.fil_col p a{
+  color: rgb(110, 110, 110) !important;
+}
+
+.fil_col p i{
+  font-size: 12px;
+}
+
+.fil_col form{
+  display: block;
+}
+
+.fil_col form input{
+  display: block;
+  width: 90%;
+  outline: none;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid rgb(206, 206, 206);
+  
+
+}
+.btn_sub_scr{
+  background: var(--color-primary);
+  border: 0 !important;
+  color: white;
+}
+
+/*Flecha para hacer la pagina hacia arriba*/
+.boton-subir {
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  background-color: #17181cc2;
+  display: none;
+
+  padding: 5px 13px 5px 13px;
+  border-radius: 50%;
+}
+
+.boton-subir a {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+
+.asd_scr{
+  background: rgba(106, 166, 235, 0.949) !important;
+}
+
+
+.sect_templ_sd{
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sect_templ_sd h1{
+  font-weight: 999;
+}
+
+.sect_templ_sd h1 i{
+  font-size: 20px;
+}
+
+.icn_adx a button{
+  padding: 10px 40px 10px 40px;
+  border: 0;
+
+  box-shadow: 0px 3px 5px rgba(43, 42, 42, 0.207);
+
+}
+
+.icn_adx a button i{
+  font-size: 13px;
+}
+
+.breadcrumb{
+  width: 100%;
+  background: var(--color-primary);
+  color: white !important;
+  padding: 10px;
+}
+
+.breadcrumb .breadcrumb-item{
+  color: white !important;
+}
+
+.breadcrumb .breadcrumb-item a{
+  color: white !important;
+  font-weight:555;
+}
+
+.cont_info button{
+  padding: 10px 30px 10px 30px;
+  border: 0;
+  box-shadow: 0px 3px 5px rgba(43, 42, 42, 0.207);
+}
+
+
+.pls_it{
+  border-bottom: 1px solid rgb(218, 218, 218);
+  padding-bottom: 5px;
+}
+
+.txt_center{
+  text-align: center;
+}
+

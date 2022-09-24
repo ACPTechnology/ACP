@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/iconorobot.png" type="image/x-icon">
+    <meta property="og:site_name"content="ACP TECHNOLOGY"/>
+    <meta property="og:title"content="ACP TECHNOLOGY"/>
+    <meta property="og:image"content="img/iconorobot.png">
+    <meta name="description" content="Acp Technology, ofrecemos soluciones creativas para tu negocio.">
+    <meta property="og:type"content="Tecnología de la información"/>
+    <meta property="og:url"content="https://ng-corp.com/">
+
+
+    <title>ACP TECHNOLOGY</title>
+
+    <!--ESTILOS Y SCRIPT BOOTSTRAP  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!--ESTILOS Y SCRIPT BOOTSTRAP  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--ESTILOS PROPIOS  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--ESTILOS PROPIOS  -->
+
+    <!-- ICONOS FONT AWESOME -->
+    <link rel="stylesheet" href="fontawesome6/css/all.css">
+
+
+</head>
+<body>
+    
+    <header class="header_inin asd_scr" >
+        <a href="" class="logo_header">
+            <img src="img/iconorobot.png" alt="">
+            <div class="txt_logo">
+                <h3>ACP</h3>
+                <p>Technology</p>
+            </div>
+        </a>
+        
+        <div class="items_nav">
+            <a href="./" >Inicio</a>
+            <a href="plantillas.html">Plantillas</a>
+            <a href="productos.html" >Productos</a>
+            <a href="#" class="select_page">Nosotros</a>
+            <a href="contactos.html">Contactos</a>
+        </div>
+        <div class="icons_menu">
+            <a onClick="menu();" data-bs-toggle="offcanvas" data-bs-target="#menu_movil" class="login_menu" id="menu_id"><i class="fa-light fa-bars"></i></a>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-top menu_movil" data-bs-backdrop="false" data-bs-scroll="true" id="menu_movil">
+        <div class="offcanvas-body ">
+            <a href="./" class="select_page"><i class="fal fa-home-lg"></i> Inicio</a>
+            <a href="plantillas.html"><i class="far fa-code"></i> Plantillas</a>
+            <a href="productos.html"><i class="fab fa-product-hunt"></i> Productos</a>
+            <a href="#" class="select_page"><i class="far fa-address-card"></i> Nosotros</a>
+            <a href="contactos.html"><i class="fal fa-id-card-alt"></i> Contactos</a>
+            <br>
+            <div class="buttons">
+                <button>Login <i class="fa-light fa-user"></i></button>
+            </div>
+            <br>
+            <div class="buttons_redes">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function menu(){
+            var item = document.getElementById("menu_id");
+            var hasClase2 = item.classList.contains( 'menu' );
+            if(hasClase2 != true){
+                document.getElementById('menu_id').classList.add('menu');
+            }else{
+                document.getElementById('menu_id').classList.remove('menu');
+            }
+        }
+        
+    </script>
+
+    
+
+
+    <div class="container">
+        <section class="inicio_ios">
+            <br><br><br><br>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Estás en: ACP TECHNOLOGY</a></li>
+                <li class="breadcrumb-item active">Nosotros <i class="far fa-address-card"></i></li>
+            </ul>
+        </section>
+        <br>
+
+        <section class="inicio_sect_dos">
+
+            <div class="row">
+                <div class="tarject icn_adx col-md-6 col-sm-6">
+                    <div>
+                        <i class="fa-light fa-users"></i>
+                        <h2>Nuestro equipo</h2>
+                        <p>Somos un grupo de jovenes emprendedores, con muchas ganas de aprender y ayudar a tu negocio a seguir creciendo.</p>
+                    </div>
+                </div>
+                <div class="tarject icn_adx col-md-6 col-sm-6">
+                    <div>
+                        <i class="fa-light fa-buildings"></i>
+                        <h2>¿A qué nos dedicamos?</h2>
+                        <p>Nos dedicamos a buscar soluciones tecnológicas, a travéz del diseño y desarrollo de páginas web dinámicas.</p>
+                    </div>
+                </div>
+
+                <div class="tarject icn_adx col-md-12 col-sm-6">
+                    <div>
+                        <i class="fa-solid fa-dna"></i>
+                        <h2>Te damos soluciones</h2>
+                        <p>Te ofrecemos páginas web para administrar tu negocio en linea, y verás como crece, Nosotros utilizamos las mejores tecnicas para que tu sistema sea eficiente y con el mínimo de errores.</p>
+                        <p>Comunícate con nosotros y enviaremos un experto para encontrar la mejor solucion a tu problema.</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+
+
+        <section class="inicio_sect_dos">
+            <h1>Te ofrecemos</h1>
+
+            <div class="row">
+                <div class="tarject icn_adx col-md-3 col-sm-6">
+                    <div>
+                        <i class="fal fa-laptop-code"></i>
+                        <h2>Desarrollo web</h2>
+                    </div>
+                </div>
+                <div class="tarject icn_adx col-md-3 col-sm-6">
+                    <div>
+                        <i class="fal fa-tools"></i>
+                        <h2>Instalación de Software</h2>
+                    </div>
+                </div>
+                <div class="tarject icn_adx col-md-3 col-sm-6">
+                    <div>
+                        <i class="fal fa-database"></i>
+                        <h2>Base de Datos</h2>
+                    </div>
+                </div>
+                <div class="tarject icn_adx col-md-3 col-sm-6">
+                    <div>
+                        <i class="fal fa-cash-register"></i>
+                        <h2>E-commerce</h2>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <br><br>
+
+        <section class="second_sect">
+            <div class="row">
+                <div class="est_panel col-md-8">
+                    <h1><b>Hacemos tus procesos más ágiles.</b></h1>
+                    <p><i class="fal fa-chevron-double-right"></i> Comunícate con nosotros y nuestros expertos te visitarán.</p>
+                    <p><i class="fal fa-chevron-double-right"></i> Comviértete en nuestro cliente.</p>
+                </div>
+                <div class="est_panel ctn-dc col-md-4">
+                    <a  href=""><button>¡Comunícate con nosotros!</button></a>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br>
+
+        
+   
+
+        <section class="sect_templ_sd">
+            <h1><i class="far fa-chevron-double-right"></i> Páginas web</h1>
+            <div class="row">
+                <div class="tarject icn_adx col-md-6 col-sm-6">
+                    <div>
+                        <i class="fal fa-presentation"></i>
+                        <h2>Plantillas Web ACP</h2>
+                        <a href="plantillas.html"><button>Visitar <i class="fal fa-long-arrow-right"></i></button></a>
+                    </div>
+                </div>
+                <div class="tarject icn_adx col-md-6 col-sm-6">
+                    <div>
+                        <i class="fab fa-product-hunt"></i>
+                        <h2>Productos ACP</h2>
+                        <a href="productos.html"><button>Visitar <i class="fal fa-long-arrow-right"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+        
+    </div>
+    <section class="sect_contc">
+        <div class="container">
+            <div class="row">
+
+                <div class="fil_col col-md-4 col-sm-6 col-12">
+                    <h3>Nuestros Servicios</h3>
+                    <p><i class="fal fa-angle-right"></i> Desarrollo Web</p>
+                    <p><i class="fal fa-angle-right"></i> Instalación de Software</p>
+                    <p><i class="fal fa-angle-right"></i> Formateos</p>
+                    <p><i class="fal fa-angle-right"></i> Bases de Datos</p>
+                    <p><i class="fal fa-angle-right"></i> E-commerce</p>
+                </div>
+
+                <div class="fil_col col-md-4 col-sm-6 col-12">
+                    <h3>Redes Sociales</h3>
+                    <p><i class="fal fa-angle-right"></i> <i class="fab fa-facebook"></i> Facebook: <a target="_blank" href="https://www.facebook.com/ACPtechnology2022">ACP TECHNOLOGY</a></p>
+                    <p><i class="fal fa-angle-right"></i> <i class="fab fa-instagram"></i> Instagram: <a target="_blank" href="https://www.instagram.com/acptechnology2022/">acptechnology2022</a></p>
+                    <p><i class="fal fa-angle-right"></i> <i class="fab fa-whatsapp"></i> WhatsApp: <a target="_blank" href="https://wa.me/51930700942?text=Hola%20ACP%20TECHNOLOGY">+51 930 700 942</a></p>
+                    <p><i class="fal fa-angle-right"></i> <i class="fal fa-envelope"></i> Correo: <a target="_blank" href="mailto:technologyacp2022@gmail.com?Subject=Requiero%20Información%20ACP%20TECHNOLOGY">technologyacp2022@gmail.com</a></p>
+                    <p><i class="fal fa-angle-right"></i> <i class="fal fa-browser"></i> Página web antigua: <a target="_blank" href="https://acptechnology.github.io/acptechnology/">acptechnology.github.io/acptechnology/</a></p>
+                </div>
+
+                <div class="fil_col col-md-4 col-sm-12 col-12">
+                    <h3>Conviértete en nuestro cliente</h3>
+                    <form action="">
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Correo">
+                        <input type="submit" placeholder="Enviar" class="btn_sub_scr">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+    <footer>
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> ACP TECHNOLOGY todos los derechos reservados. Vrs. 2.0</p>
+    </footer>
+
+    <div id="stop" class="boton-subir">
+        <a href="#top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <script>
+        $(window).scroll(function() {
+            var position =$(this).scrollTop();
+            if (position > 300) {
+            $(".boton-subir").fadeIn('slow');
+            } else {
+                $(".boton-subir").fadeOut('slow');
+            }
+            
+        });
+    </script>
+    
+
+
+</body>
+</html>
